@@ -1,0 +1,169 @@
+ /* ========== BASE ========== */
+
+ html { box-sizing: border-box; }
+ *, *:before, *:after { box-sizing: inherit; }
+
+ html {
+  font-family: 'IBM Plex Sans', 'Open Sans', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.2;
+ }
+
+
+ /* ========== TYPOGRAPHY ========== */
+
+ .big_header {
+   font-family: Rubik, Geneva Tahoma, sans-serif;
+   font-weight: 500;
+   font-size: 44px;
+   line-height: 1.45;
+ }
+
+ .section_descript {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 2;
+ }
+
+
+ /* ========== BUTTONS ========== */
+
+ .btn {
+  display: block;
+  min-width: 200px;
+  padding: 9px 15px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  background: linear-gradient(90deg, #0082AE 0%, #00C7CC 100%);
+}
+
+.btn-label {
+  position: relative;
+  display: block;
+  padding-left: 42px;
+  margin: auto;
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.btn-store {
+  display: block;
+  margin-top: -7px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.btn-download-apple .btn-store {
+  font-size: 25px;
+}
+
+.btn-download-play .btn-store {
+  font-size: 22px;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: 0;
+  background: linear-gradient(180deg, #0082AE 0%, #296E92 100%);
+}
+
+.btn:active {
+  background: linear-gradient(180deg, #EA1EDF 0%, #B833E6 100%);
+}
+
+.btn-label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-top: -2px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-download-apple .btn-label::before {
+  width: 29px;
+  height: 36px;
+  background-image: url("../img/apple-icon.svg");
+}
+
+.btn-download-play .btn-label::before {
+  width: 30px;
+  height: 33px;
+  background-image: url("../img/play-icon.svg");
+}
+
+
+ /* ========== HEADER ========== */
+
+ .navbar {
+   padding-left: 18px;
+   padding-right: 18px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .main_nav {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+
+   font-family: Rubik, Geneva Tahoma, sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.5px; 
+ }
+
+ .main_nav li {
+   margin-left: 2.14em;
+   margin-top: 2.28em;
+   margin-bottom: 2.28em;
+ }
+
+ .main_nav a {
+   color: #101C22;
+   text-decoration: none;
+ }
+
+
+ /* ========== HERO ========== */
+
+ .hero__header {
+   max-width: 416px;
+   margin-bottom: 20px;
+   color: #101C22;
+ }
+
+ .hero__descript {
+   max-width: 416px;
+   margin-bottom: 27px;
+   color: #4B545C;
+ }
+
+ .app_btns {
+   max-width: 416px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+ }
+
+
+ /* ========== UTILITY ========== */
+
+ .u-wrapper {
+   max-width: 1120px;
+   margin: auto;
+ }
