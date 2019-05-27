@@ -21,6 +21,13 @@
    line-height: 1.45;
  }
 
+ .medium_header {
+  font-family: Rubik, Geneva Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+ }
+
  .section_descript {
    font-weight: 500;
    font-size: 20px;
@@ -31,12 +38,13 @@
  /* ========== BUTTONS ========== */
 
  .btn {
-  display: block;
+  display: inline-block;
   min-width: 200px;
   padding: 9px 15px;
   border-radius: 10px;
-
   text-decoration: none;
+  color: #ffffff;
+  fill: #ffffff;
   background: linear-gradient(90deg, #0082AE 0%, #00C7CC 100%);
 }
 
@@ -49,8 +57,6 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.08em;
-  color: #ffffff;
-  fill: #ffffff;
 }
 
 .btn-store {
@@ -75,7 +81,7 @@
 }
 
 .btn:active {
-  background: linear-gradient(180deg, #EA1EDF 0%, #B833E6 100%);
+  background: #00C7CC;
 }
 
 .btn-label::before {
@@ -100,6 +106,13 @@
   width: 30px;
   height: 33px;
   background-image: url("../img/play-icon.svg");
+}
+
+.app_btns {
+  max-width: 416px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 
@@ -153,17 +166,144 @@
    color: #4B545C;
  }
 
- .app_btns {
-   max-width: 416px;
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
+
+ /* ========== ABOUT ========== */
+
+
+
+ /* ========== FEATURES ========== */
+
+ .features_list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
  }
+
+ .features__header {
+  text-align: center;
+  color: #101C22; 
+  margin-top: 33px;
+  margin-bottom: 45px;
+ }
+
+ .feature {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+ }
+
+ .feature__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  position: relative;
+}
+
+ .feature__header {
+  display: inline-block;
+  margin: 0 auto 10px;
+
+  text-align: center;
+  color: #101C22; 
+ }
+
+ .feature__descript {
+  display: inline-block;
+  margin: 0 auto 45px;
+
+  text-align: center;
+  color: #4B545C;
+ }
+
+ .sliding_list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0;
+  margin: 0 auto 110px;
+  list-style: none;
+ }
+
+ .slide {
+   display: block;
+   height: auto;
+   box-sizing: content-box;
+   flex-shrink: 0;
+
+   text-align: center;
+ }
+
+ .slide:first-child {
+  margin-left: 96px;
+ }
+
+ .slide__link {
+  text-decoration: none;
+  color: #4B545C;
+ }
+
+ .slide__link:hover,
+ .slide__link:focus {
+   outline: none;
+   color: #00C7CC;
+ }
+
+ .slide__link:active {
+  color: #296E92;
+ }
+
+ .slide__caption {
+  font-size: 12px;
+  line-height: 1.33;
+ }
+
+
+ /* ========== ADVANTAGES ========== */
+
+ .advantages__header {
+  text-align: center;
+  color: #101C22; 
+  margin-top: 33px;
+  margin-bottom: 45px;
+ }
+
+ .advantages_list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+ }
+
+
+  /* ========== DOWNLOAD ========== */
+
+  .download__header {
+    margin: 90px auto 2px;
+    text-align: center;
+    vertical-align: top;
+    color: #101C22; 
+   }
+
+  .download__subheader {
+    margin: 0 auto 29px;
+    text-align: center;
+    vertical-align: top;
+    color: #101C22;
+  }
+
+  .download__btns {
+    margin: 0 auto;
+  }
 
 
  /* ========== UTILITY ========== */
 
  .u-wrapper {
    max-width: 1120px;
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
  }
