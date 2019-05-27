@@ -40,12 +40,36 @@
  .btn {
   display: inline-block;
   min-width: 200px;
-  padding: 9px 15px;
+  padding: 10px 15px;
   border-radius: 10px;
   text-decoration: none;
   color: #ffffff;
   fill: #ffffff;
   background: linear-gradient(90deg, #0082AE 0%, #00C7CC 100%);
+}
+
+.btn:hover,
+.btn:focus {
+  outline: 0;
+  background: linear-gradient(180deg, #0082AE 0%, #296E92 100%);
+}
+
+.btn:active {
+  background: #00C7CC;
+}
+
+.btn.--cta {
+  border-radius: 24px;
+  background: linear-gradient(180deg, #EA1EDF 0%, #B833E6 100%);
+}
+
+.btn.--cta:hover,
+.btn.--cta:focus {
+  background: linear-gradient(90deg, #0082AE 0%, #00C7CC 100%);
+}
+
+.btn.--cta:active {
+  background: #00C7CC;
 }
 
 .btn-label {
@@ -72,16 +96,6 @@
 
 .btn-download-play .btn-store {
   font-size: 22px;
-}
-
-.btn:hover,
-.btn:focus {
-  outline: 0;
-  background: linear-gradient(180deg, #0082AE 0%, #296E92 100%);
-}
-
-.btn:active {
-  background: #00C7CC;
 }
 
 .btn-label::before {
