@@ -187,6 +187,18 @@
 
  /* ========== ABOUT ========== */
 
+ .about {
+   padding-top: 161px;
+   padding-bottom: 161px;
+   background: url('../img/bg/about.png') center center no-repeat;
+   background-size: contain;
+ }
+
+ .about__text {
+   background: url('../img/bg/about__text.png') center center no-repeat;
+   background-size: contain;
+   color: #FFFFFF;
+ }
 
 
  /* ========== FEATURES ========== */
@@ -252,6 +264,7 @@
    height: auto;
    box-sizing: content-box;
    flex-shrink: 0;
+   padding-right: 32px;
 
    text-align: center;
  }
@@ -282,6 +295,13 @@
 
 
  /* ========== ADVANTAGES ========== */
+
+ .advantages {
+   padding-top: 96px;
+   padding-bottom: 140px;
+
+   background-color: #F5FDFF;
+ }
 
  .advantages__header {
   text-align: center;
