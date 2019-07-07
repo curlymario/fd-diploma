@@ -385,23 +385,31 @@
 
   /* ========== DOWNLOAD ========== */
 
-  .download__header {
-    margin: 90px auto 2px;
-    text-align: center;
-    vertical-align: top;
-    color: #101C22; 
-   }
+ .download {
+   padding-bottom: 436px;
+   background-image: url("../img/bg/download.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center 100%;
+ }
 
-  .download__subheader {
-    margin: 0 auto 29px;
-    text-align: center;
-    vertical-align: top;
-    color: #101C22;
+ .download__header {
+   margin: 90px auto 2px;
+   text-align: center;
+   vertical-align: top;
+   color: #101C22; 
   }
 
-  .download__btns {
-    margin: 0 auto;
-  }
+ .download__subheader {
+   margin: 0 auto 29px;
+   text-align: center;
+   vertical-align: top;
+   color: #101C22;
+ }
+
+ .download__btns {
+   margin: 0 auto;
+ }
 
 
  /* ========== UTILITY ========== */
