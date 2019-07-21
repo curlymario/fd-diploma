@@ -412,6 +412,52 @@
  }
 
 
+/* ========== EARN ========== */
+
+ .earn {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: #CCF4F5;
+ }
+
+ .earn__descript {
+   padding-left: 640px;
+   padding-top: 96px;
+   padding-bottom: 120px;
+   background-image: url("../img/bg/earn.png");
+   background-position: left center;
+   background-repeat: no-repeat;
+ }
+
+ .earn__header,
+ .earn__text {
+   max-width: 320px;
+   margin-top: 0;
+   margin-left: 32px;
+   color: #296E92;
+ }
+
+ .earn__header {
+   margin-bottom: 16px;
+ }
+
+ .earn__text {
+   margin-bottom: 24px;
+ }
+
+ .earn__btn {
+   min-width: 256px;
+   margin-left: 28px;
+   padding: 16px 15px;
+
+   text-align: center;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.08em;
+ }
+
+
+
  /* ========== UTILITY ========== */
 
  .u-wrapper {
