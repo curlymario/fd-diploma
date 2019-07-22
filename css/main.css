@@ -158,7 +158,6 @@
    margin-right: 0;
  }
 
-
  .social-btn {
    display: block;
    width: 38px;
@@ -223,13 +222,25 @@
 
  /* ========== HERO ========== */
 
+ .hero {
+   padding-top: 96px;
+   padding-bottom: 60px;
+   background-image: url("../img/bg/hero.png");
+   background-repeat: no-repeat;
+   background-position: 100% center;
+ }
+
  .hero__header {
    max-width: 416px;
+   margin-top: 0;
+   margin-right: 0;
    margin-bottom: 20px;
    color: #101C22;
  }
 
  .hero__descript {
+   margin-top: 0;
+   margin-right: 0;
    max-width: 416px;
    margin-bottom: 27px;
    color: #4B545C;
