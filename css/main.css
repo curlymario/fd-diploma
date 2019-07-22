@@ -219,6 +219,15 @@
    text-decoration: none;
  }
 
+ .main_nav a:hover,
+ .main_nav a:focus {
+  color: #00C7CC;
+ }
+
+ .main_nav a:active {
+  color: #EA1EDF;
+ }
+
 
  /* ========== HERO ========== */
 
@@ -371,7 +380,7 @@
  }
 
  .slide__link:active {
-  color: #296E92;
+   color: #EA1EDF;
  }
 
  .slide__caption {
