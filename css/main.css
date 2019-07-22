@@ -324,7 +324,7 @@
    flex-direction: column;
    flex-wrap: nowrap;
 
-  position: relative;
+   position: relative;
 }
 
  .feature__header {
@@ -343,6 +343,10 @@
   color: #4B545C;
  }
 
+ .feature__slider {
+   position: relative;
+ }
+
  .sliding_list {
   display: flex;
   position: relative;
@@ -352,6 +356,32 @@
   padding: 0;
   margin: 0 auto 110px;
   list-style: none;
+ }
+
+ .slider_btn {
+   display: block;
+   width: 96px;
+   top: 0;
+   bottom: 0;
+   
+   position: absolute;
+   z-index: 2;
+
+   cursor: pointer;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-color: transparent;
+   border-color: transparent;
+ }
+
+ .slider_btn.--prev {
+   background-image: url("../img/prev.svg");
+   left: 0;
+ }
+
+ .slider_btn.--next {
+   background-image: url("../img/next.svg");
+   right: 0;
  }
 
  .slide {
