@@ -324,7 +324,18 @@
    flex-wrap: nowrap;
 
    position: relative;
+   background-position: center 20%;
+   background-repeat: no-repeat;
+   background-image: url("../img/bg/title-1.png");
 }
+
+ .feature:nth-child(2) .feature__title {
+   background-image: url("../img/bg/title-2.png");
+ }
+
+ .feature:nth-child(3) .feature__title {
+   background-image: url("../img/bg/title-3.png");
+ }
 
  .feature__header {
   display: inline-block;
