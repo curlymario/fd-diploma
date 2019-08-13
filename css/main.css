@@ -189,6 +189,8 @@
  .navbar {
    padding-left: 18px;
    padding-right: 18px;
+   max-width: 1440px;
+   margin: 0 auto;
    
    display: flex;
    align-items: center;
