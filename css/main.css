@@ -594,13 +594,6 @@
    background-color: #F5FDFF;
  }
 
- .footer hr {
-   border: none; 
-   color: #F5E1F4; 
-   background-color: #F5E1F4;
-   height: 1px; 
- }
-
  .footer__top_bar {
    display: flex;
    justify-content: space-between;
@@ -657,8 +650,9 @@
  }
 
  .footer__footnotes {
-  margin-top: 16px;
-  margin-bottom: 16px; 
+  padding-top: 16px;
+  padding-bottom: 16px; 
+  border-top: 1px solid #F5E1F4;
   display: flex;
  }
 
