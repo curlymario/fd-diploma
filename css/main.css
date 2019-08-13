@@ -132,7 +132,6 @@
 
  .app_btns {
    margin: 0;
-   max-width: 416px;
    display: flex;
    align-items: flex-start;
    justify-content: space-between;
@@ -247,8 +246,11 @@
    background-position: 100% center;
  }
 
- .hero__header {
+ .hero__content {
    max-width: 416px;
+ }
+
+ .hero__header {
    margin-top: 0;
    margin-right: 0;
    margin-bottom: 20px;
@@ -258,7 +260,6 @@
  .hero__descript {
    margin-top: 0;
    margin-right: 0;
-   max-width: 416px;
    margin-bottom: 27px;
    color: #4B545C;
  }
@@ -541,6 +542,7 @@
 
  .download__btns {
    margin: 0 auto;
+   max-width: 416px;
  }
 
 
