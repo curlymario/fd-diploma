@@ -137,10 +137,6 @@
    justify-content: space-between;
  }
 
- .app_btns .btn {
-   margin-bottom: 16px;
- }
-
  .social {
    display: flex;
    margin-top: 0;
@@ -240,7 +236,7 @@
 
  .hero {
    padding-top: 96px;
-   padding-bottom: 60px;
+   padding-bottom: 76px;
    background-image: url("../img/bg/hero.png");
    background-repeat: no-repeat;
    background-position: 100% center;
@@ -541,7 +537,7 @@
  }
 
  .download__btns {
-   margin: 0 auto;
+   margin: 0 auto 16px;
    max-width: 416px;
  }
 
@@ -654,6 +650,10 @@
  
  .footer__app_btns {
    flex-direction: column;
+ }
+
+ .footer__app_btns .btn:first-child {
+   margin-bottom: 16px;
  }
 
  .footer__footnotes {
