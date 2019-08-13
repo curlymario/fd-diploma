@@ -150,15 +150,15 @@
    list-style: none;
  }
 
- .social > li {
+ .social__item {
    margin-right: 15px;
  }
 
- .social > li:last-child {
+ .social__item:last-child {
    margin-right: 0;
  }
 
- .social-btn {
+ .social__btn {
    display: block;
    width: 38px;
    height: 38px;
@@ -169,20 +169,20 @@
    border-radius: 38px;
  }
 
- .social-btn:hover,
- .social-btn:focus {
+ .social__btn:hover,
+ .social__btn:focus {
    background-color: #00C7CC;
  }
 
- .social-btn:active {
+ .social__btn:active {
    background-color: #EA1EDF;
  }
 
- .social-btn.--fb { background-image: url("../img/icon/Facebook.svg") }
- .social-btn.--vk { background-image: url("../img/icon/VK.svg") }
- .social-btn.--ok { background-image: url("../img/icon/OK.svg") }
- .social-btn.--ig { background-image: url("../img/icon/Instagram.svg") }
- .social-btn.--tw { background-image: url("../img/icon/Twitter.svg") }
+ .social__btn.--fb { background-image: url("../img/icon/Facebook.svg") }
+ .social__btn.--vk { background-image: url("../img/icon/VK.svg") }
+ .social__btn.--ok { background-image: url("../img/icon/OK.svg") }
+ .social__btn.--ig { background-image: url("../img/icon/Instagram.svg") }
+ .social__btn.--tw { background-image: url("../img/icon/Twitter.svg") }
 
  /* ========== HEADER ========== */
 
@@ -210,23 +210,23 @@
    letter-spacing: 0.5px; 
  }
 
- .main_nav li {
+ .main_nav__item {
    margin-left: 2.14em;
    margin-top: 2.28em;
    margin-bottom: 2.28em;
  }
 
- .main_nav a {
+ .main_nav__link {
    color: #101C22;
    text-decoration: none;
  }
 
- .main_nav a:hover,
- .main_nav a:focus {
+ .main_nav__link:hover,
+ .main_nav__link:focus {
   color: #00C7CC;
  }
 
- .main_nav a:active {
+ .main_nav__link:active {
   color: #EA1EDF;
  }
 
@@ -479,33 +479,33 @@
    align-items: center;
  }
 
- .advantages__list img {
+ .advantages__illustration {
    display: block;
    min-height: 360px;
  }
 
- .advantages__list picture,
+ .advantages__illustration,
  .advantages__descript {
    flex-basis: 50%;
  }
 
- .advantages__descript h3  {
+ .advantages__header {
    margin-bottom: 17px;
  }
 
- .advantages__descript h3,
- .advantages__descript p {
+ .advantages__header,
+ .advantages__body {
    max-width: 254px;
    margin-left: auto;
    margin-right: auto;
    margin-top: 0;
  }
 
- .advantages__descript p {
+ .advantages__body {
   color: #4B545C;
  }
 
- .advantages__item:nth-child(2) picture { order: 2; }
+ .advantages__item:nth-child(2) .advantages__illustration { order: 2; }
  .advantages__item:nth-child(2) .advantages__descript { order: 1; }
 
 
