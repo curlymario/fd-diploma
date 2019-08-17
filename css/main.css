@@ -16,6 +16,9 @@
    max-width: 100%;
  }
 
+ /* хак для простого дебага мобильной версии */
+section, footer { overflow: scroll; }
+
  /* ========== TYPOGRAPHY ========== */
 
  .big-header {
@@ -249,58 +252,113 @@
  /* ========== HEADER ========== */
 
  .navbar {
-   padding-left: 16px;
-   padding-right: 32px;
    max-width: 1440px;
    margin: 0 auto;
    
    display: flex;
-   align-items: center;
+   flex-direction: column;
    justify-content: space-between;
+ }
+
+ .js .navbar {
+   flex-direction: row;
+   align-items: center;
  }
 
  .navbar__logo {
    display: block;
-   height: 20.5px;
+   height: 1.25em;
+   margin-top: 2.15em;
+   margin-bottom: 2.15em;
+   margin-left: 32px;
  }
 
+
  .main_nav {
+   padding: 0;
+   margin: 0; 
+   width: 100%;
+
    display: flex;
-   padding-left: 0;
-   padding-top: 2.28em;
-   padding-bottom: 2.28em;
-   margin: 0;
+   flex-direction: column;
+
    list-style: none;
 
-   font-family: Rubik, Geneva Tahoma, sans-serif;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.5px; 
+   background: #FFFFFF;
+ }
+
+ .js .main_nav {
+   display: none;
+ }
+
+ .js .main_nav.is-active {
+   display: block;
+   position: absolute;
+   top: 88px;
+   bottom: 0;
+   left: 0;
+   z-index: 10;
  }
 
  .main_nav__item {
-   margin-top: 0;
-   margin-bottom: 0;
-   margin-right: 32px;
+   border-top: 1px solid #D3D4D8;
  }
 
  .main_nav__item:last-child {
-   margin-right: 0;
+   border-bottom: 1px solid #D3D4D8;
  }
 
  .main_nav__link {
-   color: #101C22;
-   text-decoration: none;
- }
+   display: block;
+   padding: 32px;
 
- .main_nav__link:hover,
- .main_nav__link:focus {
-  color: #00C7CC;
+   font-family: Rubik, Geneva Tahoma, sans-serif;
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.5px; 
+   text-decoration: none;
+   color: #101C22;
  }
 
  .main_nav__link:active {
-  color: #EA1EDF;
+    color: #FFFFFF;
+    background-color: #00C7CC;
+ }
+
+
+ @media screen and (min-width: 752px) {
+   .navbar {
+     flex-direction: row;
+   }
+
+   .main_nav {
+     position: static;
+     display: flex;
+     flex-direction: row-reverse;
+     padding-top: 2.28em;
+     padding-bottom: 2.28em;
+   }
+   .main_nav__item,
+   .main_nav__item:last-child {
+     margin-top: 0;
+     margin-bottom: 0;
+     margin-right: 32px;
+     border: none;
+   }
+
+   .main_nav__link {
+     padding: 0;
+     font-size: 0.875em;
+   }
+
+   .main_nav__link:hover,
+   .main_nav__link:focus {
+     color: #00C7CC;
+   }
+  
+   .main_nav__link:active {
+     color: #EA1EDF;
+   }
  }
 
 
