@@ -389,29 +389,69 @@ section, footer { overflow: scroll; }
  /* ========== HERO ========== */
 
  .hero {
-   padding-top: 96px;
-   padding-bottom: 76px;
-   background-image: url("../img/bg/hero.png");
+   padding-top: 300px;
+   padding-bottom: 4.75em;
+   background-image: url("../img/bg/hero_388.png");
    background-repeat: no-repeat;
-   background-position: 100% center;
+   background-position: center top;
  }
 
  .hero__content {
    max-width: 26em;
+   margin: auto;
  }
 
- .hero__header {
+  .hero__header {
    margin-top: 0;
    margin-right: 0;
-   margin-bottom: 20px;
+   margin-bottom: 0.45em;
+   text-align: center;
    color: #101C22;
  }
 
  .hero__descript {
-   margin-top: 0;
-   margin-right: 0;
-   margin-bottom: 27px;
-   color: #4B545C;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: #4B545C;
+ }
+
+ @media screen and (min-width: 590px) {
+   .hero {
+     padding-top: 450px;
+     background-image: url("../img/bg/hero_590.png");
+   }
+ }
+
+ @media screen and (min-width: 752px) {
+
+   .hero {
+     padding-top: 5.6em;
+     padding-bottom: 4.75em;
+     background-image: url("../img/bg/hero_640.png");
+     background-position: 28em bottom;
+   }
+
+   .hero__content {
+      margin: 0;
+   }
+
+   .hero__header {
+     text-align: left;
+   }
+
+   .hero__descript {
+     text-align: left;
+   }
+
+ }
+
+ @media screen and (min-width: 1440px) {
+   .hero {
+     background-image: url("../img/bg/hero_720.png");
+   }
+
  }
 
 
