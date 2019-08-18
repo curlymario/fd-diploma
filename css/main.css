@@ -251,7 +251,7 @@ section, footer { overflow: scroll; }
 
  /* ========== HEADER ========== */
 
- .navbar {
+ .navbar__bar {
    max-width: 1440px;
    margin: 0 auto;
    display: flex;
@@ -259,12 +259,8 @@ section, footer { overflow: scroll; }
    justify-content: space-between;
  }
 
- .navbar__toggle {
-   display: none;
- }
-
  @media screen and (max-width: 751px) {
-   .js .main_header.is-fixed {
+   .js .navbar.is-opened {
      position: fixed;
      top: 0;
      bottom: 0;
@@ -275,13 +271,16 @@ section, footer { overflow: scroll; }
      background: #FFFFFF;
    }
 
-   .js .navbar {
+   .js .navbar__bar {
     flex-direction: row;
     align-items: center;
   }
   
-  .js .navbar__toggle.--open.is-opened,
-  .js .navbar__toggle.--close.is-opened {
+  .navbar__toggle {
+    display: none;
+  }
+
+  .js .navbar__toggle.is-active {
      display: block;
      margin-right: 2em;
    }
@@ -346,7 +345,7 @@ section, footer { overflow: scroll; }
 
 
  @media screen and (min-width: 752px) {
-   .navbar {
+   .navbar__bar {
      flex-direction: row;
      align-items: center;
    }
