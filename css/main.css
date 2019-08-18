@@ -282,7 +282,7 @@ section, footer { overflow: scroll; }
 
   .js .navbar__toggle.is-active {
      display: block;
-     margin-right: 2em;
+     margin-right: 1em;
    }
  
   .js .navbar__menu {
@@ -303,7 +303,7 @@ section, footer { overflow: scroll; }
    height: 1.25em;
    margin-top: 2em;
    margin-bottom: 2em;
-   margin-left: 2em;
+   margin-left: 1em;
  }
 
  .main_nav {
@@ -356,17 +356,17 @@ section, footer { overflow: scroll; }
      flex-direction: row-reverse;
 
    }
-   .main_nav__item,
-   .main_nav__item:last-child {
+   .main_nav__item {
      margin-top: 0;
      margin-bottom: 0;
      margin-right: 2em;
      border: none;
    }
 
-   /* .main_nav__item:first-child {
-     margin-right: 0;
-   } */
+   .main_nav__item:first-child {
+    margin-bottom: 0; 
+    margin-right: 1em;
+   }
 
    .main_nav__link {
      padding: 0;
