@@ -421,8 +421,6 @@ section, footer { overflow: scroll; }
    display: flex;
    padding-top: 160px;
    padding-bottom: 160px;
-   margin-left: 16px;
-   margin-right: 16px;
    justify-content: center;
    background: url('../img/bg/about.png') center center no-repeat;
    background-size: contain;
