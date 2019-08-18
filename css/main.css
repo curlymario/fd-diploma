@@ -254,25 +254,58 @@ section, footer { overflow: scroll; }
  .navbar {
    max-width: 1440px;
    margin: 0 auto;
-   
    display: flex;
    flex-direction: column;
    justify-content: space-between;
  }
 
- .js .navbar {
-   flex-direction: row;
-   align-items: center;
+ .navbar__toggle {
+   display: none;
+ }
+
+ @media screen and (max-width: 751px) {
+   .js .main_header.is-fixed {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 100;
+
+     background: #FFFFFF;
+   }
+
+   .js .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .js .navbar__toggle.--open.is-opened,
+  .js .navbar__toggle.--close.is-opened {
+     display: block;
+     margin-right: 2em;
+   }
+ 
+  .js .navbar__menu {
+     display: none;
+   }
+ 
+  .js .navbar__menu.is-opened {
+     display: block;
+     position: absolute;
+     top: 84px;
+     bottom: 0;
+     left: 0;
+   }
  }
 
  .navbar__logo {
    display: block;
    height: 1.25em;
-   margin-top: 2.15em;
-   margin-bottom: 2.15em;
-   margin-left: 32px;
+   margin-top: 2em;
+   margin-bottom: 2em;
+   margin-left: 2em;
  }
-
 
  .main_nav {
    padding: 0;
@@ -283,21 +316,7 @@ section, footer { overflow: scroll; }
    flex-direction: column;
 
    list-style: none;
-
    background: #FFFFFF;
- }
-
- .js .main_nav {
-   display: none;
- }
-
- .js .main_nav.is-active {
-   display: block;
-   position: absolute;
-   top: 88px;
-   bottom: 0;
-   left: 0;
-   z-index: 10;
  }
 
  .main_nav__item {
@@ -310,7 +329,7 @@ section, footer { overflow: scroll; }
 
  .main_nav__link {
    display: block;
-   padding: 32px;
+   padding: 2em;
 
    font-family: Rubik, Geneva Tahoma, sans-serif;
    font-weight: 500;
@@ -329,22 +348,26 @@ section, footer { overflow: scroll; }
  @media screen and (min-width: 752px) {
    .navbar {
      flex-direction: row;
+     align-items: center;
    }
 
    .main_nav {
      position: static;
      display: flex;
      flex-direction: row-reverse;
-     padding-top: 2.28em;
-     padding-bottom: 2.28em;
+
    }
    .main_nav__item,
    .main_nav__item:last-child {
      margin-top: 0;
      margin-bottom: 0;
-     margin-right: 32px;
+     margin-right: 2em;
      border: none;
    }
+
+   /* .main_nav__item:first-child {
+     margin-right: 0;
+   } */
 
    .main_nav__link {
      padding: 0;
