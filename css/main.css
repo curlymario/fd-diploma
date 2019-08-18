@@ -258,6 +258,10 @@ section, footer { overflow: scroll; }
    flex-direction: column;
    justify-content: space-between;
  }
+  
+ .navbar__toggle {
+   display: none;
+ }
 
  @media screen and (max-width: 751px) {
    .js .navbar.is-opened {
@@ -274,10 +278,6 @@ section, footer { overflow: scroll; }
    .js .navbar__bar {
     flex-direction: row;
     align-items: center;
-  }
-  
-  .navbar__toggle {
-    display: none;
   }
 
   .js .navbar__toggle.is-active {
