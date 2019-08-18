@@ -17,7 +17,7 @@
  }
 
  /* хак для простого дебага мобильной версии */
-section, footer { overflow: scroll; }
+ section, footer { overflow: scroll; }
 
  /* ========== TYPOGRAPHY ========== */
 
@@ -390,7 +390,6 @@ section, footer { overflow: scroll; }
 
  .hero {
    padding-top: 300px;
-   padding-bottom: 4.75em;
    background-image: url("../img/bg/hero_388.png");
    background-repeat: no-repeat;
    background-position: center top;
@@ -458,42 +457,135 @@ section, footer { overflow: scroll; }
  /* ========== ABOUT ========== */
 
  .about {
+   overflow: hidden;
    display: flex;
-   padding-top: 10em;
-   padding-bottom: 10em;
-   margin-left: 1em;
-   margin-right: 1em;
+   flex-direction: column;
    justify-content: center;
-   background: url('../img/bg/about.png') center center no-repeat;
-   background-size: contain;
+   align-items: center;
+
+   padding-top: 8em;
+   background: url('../img/bg/about_590.png') top center no-repeat;
+   background-size: cover;
  }
 
  .about__img {
-   margin-top: 4.7em;
-   margin-bottom: 1.25em;
-   margin-left: 6.2em;
-   margin-right: 2.125em;
+   min-width: 10em;
+   margin-top: 2.5em;
+   margin-bottom: 2.5em;
  }
 
  .about__text {
-   padding-top: 93px;
-   padding-bottom: 88px;
-   padding-left: 94px;
-   padding-right: 99px;
-   background: url('../img/bg/about__text.png') center center no-repeat;
-   background-size: contain;
+   padding-top: 9em;
+   padding-bottom: 8em;
+   padding-left: 1em;
+   padding-right: 1em;
+   width: 100%;
+
+   background: url('../img/bg/about__text_545.png') center center no-repeat;
+   background-size: initial;
+
    color: #FFFFFF;
+   text-align: center;
  }
 
  .about__header {
-   margin-top: 18px;
-   margin-bottom: 18px;
+   margin-top: 0.56em;
+   margin-bottom: 0.56em;
  }
 
  .about__descript {
-   max-width: 352px;
-   margin: 0;
+   max-width: 24em; ;
+   margin: 0 auto;
  }
+ 
+ @media screen and (min-width: 448px) {
+  .about__img {
+    min-width: 28em;
+  }
+ }
+
+ @media screen and (min-width: 590px) {
+   .about {
+     flex-direction: row;
+
+     padding-top: 10em;
+     padding-bottom: 10em;
+     padding-left: 1em;
+     padding-right: 1em;
+
+     background: url('../img/bg/about_752.png') center center no-repeat;
+     background-size: contain;
+   }
+
+   .about__img {
+     min-width: 10em;
+     margin-top: 1em;
+     margin-bottom: 0;
+     margin-left: 5em;
+     margin-right: 1em;
+   }
+
+   .about__text {
+     min-width: 30em;
+     padding-top: 5em;
+     padding-bottom: 4.8em;
+     padding-left: 5.2em;
+     padding-right: 5.5em;
+
+     width: auto;
+
+     background: url('../img/bg/about__text_545.png') center center no-repeat;
+     background-size: contain;
+
+     text-align: left;
+   }
+
+   .about__descript {
+     max-width: 15.6em;
+     padding: 0;
+     margin: 0;
+   }
+
+ }
+
+ @media screen and (min-width: 752px) {
+
+   .about {
+     padding-top: 5em;
+     padding-bottom: 5em;
+     
+     background: url('../img/bg/about_1464.png') center center no-repeat;
+     background-size: contain;
+   }
+
+   .about__img {
+     min-width: 10em;
+     margin-top: 4.7em;
+     margin-bottom: 1.25em;
+     margin-left: 6.2em;
+     margin-right: 2.125em;
+   }
+  
+   .about__text {
+     min-width: 34.125em;
+     padding-top: 5.8em;
+     padding-bottom: 5.5em;
+     padding-left: 5.9em;
+     padding-right: 6.2em;
+   } 
+ }
+  
+ @media screen and (min-width: 1120px) {
+   .about {
+     padding-top: 10em;
+     padding-bottom: 10em;
+   }
+
+   .about__img {
+     min-width: 28em;
+   }
+ }
+
 
 
  /* ========== FEATURES ========== */
