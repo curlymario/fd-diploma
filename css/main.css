@@ -45,7 +45,7 @@ section, footer { overflow: scroll; }
    line-height: 2;
  }
 
- @media screen and (min-width: 728px) {
+ @media screen and (min-width: 752px) {
     .big-header {
      font-size: 2.75em;
    }
@@ -263,7 +263,7 @@ section, footer { overflow: scroll; }
    display: none;
  }
 
- @media screen and (max-width: 751px) {
+ @media screen and (max-width: 752px) {
    .js .navbar.is-opened {
      position: fixed;
      top: 0;
@@ -297,6 +297,7 @@ section, footer { overflow: scroll; }
      left: 0;
    }
  }
+
 
  .navbar__logo {
    display: block;
@@ -356,7 +357,8 @@ section, footer { overflow: scroll; }
      flex-direction: row-reverse;
 
    }
-   .main_nav__item {
+   .main_nav__item,
+   .main_nav__item:last-child {
      margin-top: 0;
      margin-bottom: 0;
      margin-right: 2em;
@@ -703,10 +705,11 @@ section, footer { overflow: scroll; }
    background-color: #CCF4F5;
  }
 
- .earn__descript {
-   padding-left: 640px;
-   padding-top: 96px;
-   padding-bottom: 120px;
+ .earn__descript { 
+   max-width: 60em;
+   padding-left: 40em;
+   padding-top: 6em;
+   padding-bottom: 7.5em;
    background-image: url("../img/bg/earn.png");
    background-position: left center;
    background-repeat: no-repeat;
@@ -714,23 +717,21 @@ section, footer { overflow: scroll; }
 
  .earn__header,
  .earn__text {
-   max-width: 320px;
    margin-top: 0;
-   margin-left: 32px;
    color: #296E92;
  }
 
  .earn__header {
-   margin-bottom: 16px;
+   margin-bottom: 0.66em;
  }
 
  .earn__text {
-   margin-bottom: 24px;
+   margin-bottom: 1.5em;
  }
 
  .earn__btn {
    min-width: 256px;
-   margin-left: 28px;
+   margin-left: -4px;
    padding: 16px 15px;
 
    text-align: center;
@@ -858,7 +859,9 @@ section, footer { overflow: scroll; }
  /* ========== UTILITY ========== */
 
  .u-wrapper {
-   max-width: 1120px;
+   max-width: 72em;
    margin-left: auto;
    margin-right: auto;
+   padding-left: 1em;
+   padding-right: 1em;
  }
