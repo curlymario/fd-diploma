@@ -772,24 +772,37 @@
  /* ========== ADVANTAGES ========== */
 
  .advantages {
-   padding-top: 96px;
-   padding-bottom: 140px;
+   padding-top: 6em;
+   padding-bottom: 6em;
 
    background-color: #F5FDFF;
  }
 
- .advantages__header {
+ .advantages__title {
    text-align: center;
    color: #101C22; 
-   margin-top: 33px;
-   margin-bottom: 45px;
+   margin-top: 0.75em;
+   margin-bottom: 0.75em;
+   padding-left: 1em;
+   padding-right: 1em;
  }
+
+
+@media screen and (min-width: 590px) {
+   .advantages {
+     padding-bottom: 8.75em;
+   }
+
+   .advantages__title {
+     margin-bottom: 1em;
+   }
+}
 
  .advantages__list {
    padding: 0;
    margin: 0;
    list-style: none;
-   max-width: 960px;
+   max-width: 60em;
    padding-left: 1em;
    padding-right: 1em;
    margin-left: auto;
@@ -799,12 +812,13 @@
  .advantages__item {
    margin: 0;
    display: flex;
+   flex-direction: column;
    align-items: center;
  }
 
  .advantages__illustration {
-   display: block;
-   min-height: 360px;
+   display: flex;
+   align-items: center;
  }
 
  .advantages__illustration,
@@ -812,24 +826,45 @@
    flex-basis: 50%;
  }
 
- .advantages__header {
-   margin-bottom: 17px;
- }
-
- .advantages__header,
- .advantages__body {
-   max-width: 254px;
+ .advantages__wrap {
+   max-width: 29.5em;
+   padding-top: 1em;
+   padding-bottom: 2em;
+   padding-left: 2em;
+   padding-right: 2em;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 0;
+ }
+
+  .advantages__header {
+   margin-top: 1em;
+   margin-bottom: 0.55em;
  }
 
  .advantages__body {
-  color: #4B545C;
+   margin-top: 0;
+   margin-bottom: 3em;
+   color: #4B545C;
  }
 
- .advantages__item:nth-child(2) .advantages__illustration { order: 2; }
- .advantages__item:nth-child(2) .advantages__descript { order: 1; }
+
+ @media screen and (min-width: 590px) {
+   .advantages__item {
+     margin: 0;
+     flex-direction: row;
+     align-items: center;
+   }
+
+   .advantages__wrap {
+     max-width: 15.875em;
+     padding: 0;
+   }
+
+   .advantages__item:nth-child(2) .advantages__illustration { order: 2; }
+   .advantages__item:nth-child(2) .advantages__descript { order: 1; }
+ }
+
+
 
 
   /* ========== DOWNLOAD ========== */
