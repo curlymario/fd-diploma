@@ -824,9 +824,9 @@
  .advantages__illustration,
  .advantages__descript {
    flex-basis: 50%;
- }
+ } 
 
- .advantages__wrap {
+ .advantages__descript {
    max-width: 29.5em;
    padding-top: 1em;
    padding-bottom: 2em;
@@ -855,7 +855,7 @@
      align-items: center;
    }
 
-   .advantages__wrap {
+   .advantages__descript {
      max-width: 15.875em;
      padding: 0;
    }
