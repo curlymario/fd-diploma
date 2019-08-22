@@ -925,19 +925,30 @@
 /* ========== EARN ========== */
 
  .earn {
-   padding-top: 60px;
-   padding-bottom: 60px;
+   padding-top: 3.75em;
+   padding-bottom: 3.75em;
    background-color: #CCF4F5;
  }
 
- .earn__text { 
-   max-width: 60em;
-   padding-left: 40em;
-   padding-top: 6em;
-   padding-bottom: 7.5em;
-   background-image: url("../img/bg/earn.png");
-   background-position: left center;
-   background-repeat: no-repeat;
+ .earn__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .earn__illustration,
+ .earn__description {
+   flex-basis: 50%;
+ } 
+
+ .earn__description { 
+   max-width: 29.5em;
+   padding-top: 1em;
+   padding-bottom: 2em;
+   padding-left: 2em;
+   padding-right: 2em;
+
+   text-align: center;
  }
 
  .earn__header,
@@ -955,16 +966,30 @@
  }
 
  .earn__btn {
-   min-width: 256px;
    margin-left: -4px;
-   padding: 16px 15px;
+   padding: 1.14em 2.28em;
 
    text-align: center;
-   font-size: 14px;
-   line-height: 16px;
+   font-size: 0.875em;
+   line-height: 1.14;
    letter-spacing: 0.08em;
  }
 
+
+ @media screen and (min-width: 752px) {
+   .earn__content {
+     flex-direction: row;
+   }
+ 
+   .earn__description {
+     min-width: 20em;
+     max-width: 25em;
+     padding-top: 6em;
+     padding-bottom: 7.5em;
+
+     text-align: left;
+   }
+ }
 
  /* ========== FOOTER ========== */
 
