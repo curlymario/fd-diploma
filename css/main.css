@@ -930,7 +930,7 @@
    background-color: #CCF4F5;
  }
 
- .earn__descript { 
+ .earn__text { 
    max-width: 60em;
    padding-left: 40em;
    padding-top: 6em;
@@ -941,7 +941,7 @@
  }
 
  .earn__header,
- .earn__text {
+ .earn__descript {
    margin-top: 0;
    color: #296E92;
  }
@@ -950,7 +950,7 @@
    margin-bottom: 0.66em;
  }
 
- .earn__text {
+ .earn__descript {
    margin-bottom: 1.5em;
  }
 
