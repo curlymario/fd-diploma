@@ -16,6 +16,9 @@
    max-width: 100%;
  }
 
+ body {
+   min-width: 320px;
+ }
 
  /* ========== TYPOGRAPHY ========== */
 
@@ -1188,7 +1191,7 @@
    }
  }
 
- 
+
  /* ========== UTILITY ========== */
 
  .u-wrapper {
