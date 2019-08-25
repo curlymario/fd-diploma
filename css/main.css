@@ -285,20 +285,37 @@
    }
 
    .js .navbar__bar {
-    flex-direction: row;
-    align-items: center;
-  }
+     flex-direction: row;
+     align-items: center;
+   }
 
-  .js .navbar__toggle.is-active {
+   .js .navbar__toggle.is-active {
      display: block;
      margin-right: 1em;
    }
+
+   .navbar__toggle {
+     width: 32px;
+     height: 32px;
+     border: none;
+     background-color: transparent;
+     background-size: contain;
+     color: transparent;
+   }
+
+   .navbar__toggle.--open {
+     background-image: url("../img/menu.svg");
+   }
+
+   .navbar__toggle.--close {
+      background-image: url("../img/menu-close.svg")
+   }
  
-  .js .navbar__menu {
+   .js .navbar__menu {
      display: none;
    }
  
-  .js .navbar__menu.is-opened {
+   .js .navbar__menu.is-opened {
      display: block;
      position: absolute;
      top: 84px;
