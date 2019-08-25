@@ -892,6 +892,7 @@
  .download {
    padding-left: 1em;
    padding-right: 1em;
+   padding-top: 8em;
    padding-bottom: 20em;
    background-image: url("../img/bg/download_440.jpg");
    background-repeat: no-repeat;
@@ -902,6 +903,7 @@
 
  @media screen and (min-width: 448px) {
    .download {
+     padding-top: 6em;
      padding-bottom: 26.25em;
      background-image: url("../img/bg/download_544.jpg");
    }
@@ -922,7 +924,7 @@
 
 
  .download__header {
-   margin: 4em auto 0.1em;
+   margin: 0 auto 0.1em;
    text-align: center;
    vertical-align: top;
    color: #101C22; 
@@ -940,14 +942,6 @@
    padding-bottom: 1em;
    max-width: 26em;
  }
-
-
- @media screen and (min-width: 448px) {
-   .download__header {
-     margin-top: 3em;
-  }
- }
-
 
 /* ========== EARN ========== */
 
